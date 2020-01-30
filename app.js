@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
 router.post('/status', function (req, res) {
     led = req.body.led
     if(req.body.led){
-        //led on
+        //led n
         console.log("on")
     }else{
         //led off
