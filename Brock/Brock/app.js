@@ -12,11 +12,7 @@ router.get('/', function (req, res) {
 router.post('/status', function (req, res) {
     led = req.body.led
     if(req.body.led){
-<<<<<<< HEAD
-       
-=======
-        //led n
->>>>>>> 6247088e7ddc334682dbfc22989eec4cd22abfcd
+        //led on
         console.log("on")
     }else{
         //led off
@@ -32,4 +28,4 @@ app.use(bodyParser.json())
 app.use('/static', express.static('static'))
 app.use('/', router)
 
-var server = app.listen(80, '0.0.0.0');
+var server = app.listen(5000)
